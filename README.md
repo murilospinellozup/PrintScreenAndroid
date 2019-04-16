@@ -7,7 +7,7 @@ get Bitmap from imageView setted, and put content in memory, after this, show op
     PrintUtils.printView(imageCopy, this);
     
 
-# if (PrintUtils.isRequestPermissionResult(requestCode, permissions, grantResults))
+# PrintUtils.isRequestPermissionResult(requestCode, permissions, grantResults)
 When permission will agree, verify the result. if always it's okay, try share again.
 
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
